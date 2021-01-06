@@ -230,7 +230,7 @@ public final class CDPlayer {
      * True if flying with an Elytra or similar
      */
     public boolean isFallFlying() {
-        return mcPlayer.isFallFlying();
+        return mcPlayer.isFallFlying() || mcPlayer.hasStatusEffect(StatusEffects.SLOW_FALLING);
     }
 
     public ServerPlayNetworkHandler getNetworkHandler() {
